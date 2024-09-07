@@ -1,0 +1,35 @@
+body {
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+body {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 700px;
+}
+
+img {
+    width: 700px;
+}
+
+
+.preparacao {
+    background-color: rgba(248, 213, 236, 0.493);
+}
+
+.preparacao h3 {
+    color: rgb(179, 11, 89);
+    padding: 20px;
+}
+
+.preparacao ul li {
+    margin-bottom: 15px;
+}
+
+.preparacao ul {
+    margin: 15px;
+    padding-bottom: 10px;
+}
