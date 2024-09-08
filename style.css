@@ -7,7 +7,6 @@ body {
     width: 100%;
     max-width: 700px;
 }
-
 .conteudo {
     position: relative;
     z-index: 1;
@@ -17,7 +16,6 @@ body {
     width: 100%;
     height: 100%;
 }
-
 .fundo {
     position: fixed;
     z-index: -1;
@@ -27,30 +25,62 @@ body {
     width: 100%;
     height: 100%;
 }
-
 img {
     width: 100%;
     height: auto;
     object-fit: cover;
     border-radius: 20px;
 }
-
-
 .preparacao {
     background-color: rgba(248, 213, 236, 0.493);
     border-radius: 20px;
 }
-
 .preparacao h3 {
     color: rgb(179, 11, 89);
     padding: 20px;
 }
-
 .preparacao ul li {
     margin-bottom: 15px;
 }
-
 .preparacao ul {
     margin: 15px;
     padding-bottom: 10px;
+}
+.valores {
+    display: flex;
+    flex-direction: column;
+}
+.valor {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    margin-right: 50%;
+}
+.valor hr {
+    flex-basis: 100%;
+    align-self: center;
+    padding-inline: 100%;
+}
+#color {
+    color: rgb(133, 48, 9);
+}
+.instructions ol li {
+    margin-bottom: 15px;
+}
+.instructions ol {
+    counter-reset: item;
+    list-style: none;
+    padding: 0;
+}
+.instructions li {
+    align-items: center;
+    margin-bottom: 5px;
+    justify-content: space-between;
+}
+.instructions li::before {
+    content: counter(item)".";
+    counter-increment: item;
+    color: rgb(133, 48, 9);
+    margin-right: 5px;
+
 }
