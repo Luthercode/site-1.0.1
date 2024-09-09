@@ -5,7 +5,17 @@ body {
     margin-bottom: 30px;
     box-sizing: border-box;
     width: 100%;
+    height: auto;
     max-width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    display: grid;
+    place-items: 100vh;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    overflow-x: hidden;
 }
 .conteudo {
     position: relative;
@@ -88,4 +98,13 @@ img {
 }
 h1 {
     font-family: Young Serif ;
+}
+@media (max-width: 600px) {
+    body {
+        width: 100%;
+        padding: 0 10px;
+    }
+}
+* {
+    box-sizing: border-box;
 }
